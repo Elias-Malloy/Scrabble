@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+#board {
+	width: 100%;
+}
+
+#backdrop {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#form-tile {
+	position: absolute;
+	z-index: 4;
+	background: #c5d9ed;
+	border-radius: 2%;
+}
+
+#form-tile h1 {
+	width: 100%;
+	text-align: center;
+}
+
+#form-tile [type=text] {
+	width: 80%;
+	height: 10%;
+}
+
+#form-tile [type=password] {
+	width: 80%;
+	height: 10%;
+}
+
+#form-tile label {
+	font-size: 1em;
+}
+
+#form-tile img {
+	width: 10%;
+	padding-top: 2%;
+	padding-left: 3%;
+}
+
+#deck {
+	position: absolute;
+	z-index: 2;
+	background: #726658;
+	border-radius: 2%;
+}
+
+#games-tab {
+	position: absolute;
+	background: lightgrey;
+	border-radius: 2%;
+	display: inline-grid;
+	grid-template-columns: auto;
+	margin-top: 2%;
+}
+
+#games-tab label {
+	padding-left: 2%;
+	font-size: 0.5em;
+	cursor: pointer;
+}
+
+#error-message {
+	position: absolute;
+	text-align: center;
+	font-size: 0.5em;
+	color: red;
+}
+
+.tile {
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.score-box {
+	position: absolute;
+	background: #1C75BC;
+	border-radius: 2%;
+	color: white;
+}
+
+.score-box p {
+	max-width: 100%;
+	height: 50%;
+}
+
+#player1Score p {
+	text-align: left;
+	padding-left: 3%;
+}
+
+#player2Score p {
+	text-align: right;
+	padding-right: 3%; 
+}
+
+.selected {
+	background: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

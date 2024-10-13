@@ -1,0 +1,19 @@
+CREATE TABLE Users (
+    username VARCHAR(32) PRIMARY KEY,
+    passwordHash CHAR(60),
+	incomingChallenge VARCHAR(32)
+);
+
+CREATE TABLE Games (
+	gameId INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	board CHAR(225),
+    bag CHAR(100),
+	player1 VARCHAR(32),
+    player2 VARCHAR(32),
+    hand1 CHAR(7),
+    hand2 CHAR(7),
+    score1 INT,
+	score2 INT,
+	player1ToMove CHAR(2),
+	winner CHAR(2)
+);
